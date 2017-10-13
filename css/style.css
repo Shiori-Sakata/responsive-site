@@ -52,7 +52,12 @@ a {
   margin-top: 0px;
   background-size: cover;
   background-image: url(../images/flower.jpg);
-  background-position: center center; }
+  background-position: center center;
+  height: 250px; }
+  @media (min-width: 769px) {
+    #cover {
+      background-size: cover;
+      height: 500px; } }
   #cover div {
     display: block; }
 
@@ -77,14 +82,14 @@ a {
 header .profile {
   width: 60%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 10px 0;
   clear: both; }
 header .site-title {
-  font-size: 4.2rem;
+  font-size: 3.5rem;
   line-height: normal; }
   header .site-title span {
     display: block;
-    font-size: 5.6rem;
+    font-size: 4.2rem;
     font-weight: bold;
     color: #4C4C4C; }
 
@@ -94,9 +99,22 @@ header .site-title {
 
   /* Header
   ------------------------------------------------------------*/
-  .button-contact:hover, .button-contact:active {
+  header .button-contact:hover, header .button-contact:active {
     background-color: #4c4c4c;
-    color: #FFF; } }
+    color: #FFF; }
+  header .profile {
+    width: 60%;
+    margin: 0 auto;
+    padding: 70px 0;
+    clear: both; }
+  header .site-title {
+    font-size: 4.2rem;
+    line-height: normal; }
+    header .site-title span {
+      display: block;
+      font-size: 5.6rem;
+      font-weight: bold;
+      color: #4C4C4C; } }
 section {
   padding: 60px 0; }
   section .container {
@@ -158,33 +176,20 @@ section {
 
   #contact ul a:hover {
     background-color: #f6719a; } }
-#contact ul {
+#contact {
   text-align: center;
-  margin-top: 60px; }
-  #contact ul li {
-    display: inline-block;
-    font-size: 2.8rem;
+  display: block; }
+  #contact a {
     text-align: center;
-    margin-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align: top; }
-    #contact ul li:last-child {
-      margin-right: 0; }
-  #contact ul .github, #contact ul .skype {
-    font-size: 3.2rem; }
-  #contact ul .github i {
-    margin-left: 2px; }
-  #contact ul a {
     display: block;
-    width: 50px;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 170px;
     height: 50px;
     color: #FFF;
     background-color: #F9A1BC;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 10px; }
 
 /* Footer
 ------------------------------------------------------------*/
